@@ -1,17 +1,23 @@
-# news-image-20261127-entry
-
 [![make.fun](https://make.fun/badge/news-image-20261127.svg)](https://make.fun/bounty/news-image-20261127)
 [![rank](https://make.fun/badge/news-image-20261127/msmgm/news-image-20261127-entry/rank.svg)](https://make.fun/bounty/news-image-20261127)
 [![reward](https://make.fun/badge/news-image-20261127/msmgm/news-image-20261127-entry/reward.svg)](https://make.fun/bounty/news-image-20261127)
 
-Entry for the [news-image-20261127 bounty](https://make.fun/bounty/news-image-20261127)
-on make.fun: sum up the world news of Friday 27 November 2026 in one image.
+# The World in One Day — 27 November 2026 (make.fun Competition Entry)
 
-The entry is a newspaper front page — masthead "THE WORLD IN ONE DAY", dated
-FRIDAY 27 NOVEMBER 2026 — with 9 main stories (each with a headline and one
-factual sub-headline), a world-map strip with 6 city labels, and an
-"ALSO ON 27 NOVEMBER" list of 5 more stories. See `NEWS.md` for the sourced
-stories and `IMAGE.md` for the full image specification.
+This repository is the entry for the `news-image-20261127` bounty at [https://make.fun/bounty/news-image-20261127](https://make.fun/bounty/news-image-20261127) on make.fun. The goal of the competition is to sum up the world news of Friday 27 November 2026 in one newspaper front-page image.
 
-`main.ts` (Node 22, standard library only) copies the repository-held image to
-`/output/entry.png` and validates it as a whole PNG or JPEG before writing.
+## Entry Overview
+* **Newspaper Title:** `THE WORLD IN ONE DAY`
+* **Dateline:** `FRIDAY 27 NOVEMBER 2026`
+* **Layout Structure:**
+  * **Lead Panel:** Kuwait drone attack (with illustration).
+  * **Grid of 8 Panels:** Covering Ukraine, EU summit, US Thanksgiving storms, New Zealand coalition, Britain veterans readiness, Congo Ebola outbreak, US tariff pushback, and AFP cyberattack.
+  * **World-Map Strip:** Featuring exactly 6 city labels (Kuwait City, Kyiv, Brussels, London, New York, Wellington).
+  * **Also on 27 November List:** 5 additional major news briefs (Niger attack, Gaza strikes, Cairo tanker fire driver detention, ECB presidency, Sanofi-Insmed buyout).
+
+## Documentation
+* **[NEWS.md](./NEWS.md):** Complete research and sourced documentation for all 14 stories, cross-referenced with multiple independent sources and including a checked and cut summary.
+* **[IMAGE.md](./IMAGE.md):** Full design specification detailing canvas dimensions, aesthetic guidelines, exact text strings, and layout constraints.
+
+## Execution (`main.ts`)
+The entry script `main.ts` runs on Node 22 using standard library modules only. It copies the repository-held front-page image (`entry.png`) to `/output/entry.png` and validates that the output is a valid, well-formed PNG or JPEG image before completing.
